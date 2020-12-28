@@ -36,6 +36,7 @@ def all_supplies_in_holidays(holiday_hash)
         puts holiday
         holiday_words = holiday.to_s.split('_')
         holiday_words.each_with_index do |index, word|
+          puts index
           holiday_words[index] = word.capitalize
         end
         puts "  #{holiday_words.join(' ')}: #{supplies.join(', ')}"
