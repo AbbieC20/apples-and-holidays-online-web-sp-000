@@ -20,13 +20,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
 end
 
 def all_winter_holiday_supplies(holiday_hash)
-  winter_supplies = []
-  holiday_hash.each do |season, supplies|
-    if season == "winter"
-      winter_supplies.push(supplies)
-    end
-  end
-  return winter_supplies
+  return holiday_hash.values.flatten
 end
 
 # given that holiday_hash looks like this:
